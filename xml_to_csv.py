@@ -29,7 +29,7 @@ def xml_to_csv(path):
 
 
 def main():
-    image_path = os.path.join(os.getcwd(), 'annotations')
+    image_path = os.path.join(os.getcwd(), 'annotations') #Changing the path of the directory once be necessary
     xml_df = xml_to_csv(image_path)
     xml_df.to_csv('train.csv', index=None)
     print('Successfully converted xml to csv.')
